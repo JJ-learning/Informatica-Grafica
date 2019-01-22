@@ -1,0 +1,9 @@
+Para simular el coche del archivo jpg, me he basado en utilizar tanto figuras primitivas como figuras que he creado yo mismo con IndexedFaceSet. 
+
+Para comenzar la creación, he creado el chasis delantero que se basa en una figura indexedFaceSet, ya que con las figuras primitivas veía prácticamente imposible crearlo. Para el chasis trasero, he utilizado la figura primitiva Box, que con el atributo translation he conseguido juntarlos para que parezca una única pieza.
+
+Seguidamente, he simulado las ruedas con la primitiva Sphere, y les he puesto un color parecido al negro, ya que con ese color no se aprecia bien.
+
+Una vez realizada ya la forma básica del coche, he empezado con los "accesorios", tales como, el alerón, junto con sus dos sujecciones que se unen al chasis, el tubo de escape y las luces delanteras, que las he simulado con una figura IndexedFaceSet. 
+
+Para terminar la figura e intentar que se parezca un poco más a la original, he simulado las "alas" con una figura IndexedFaceSet. Además, he realizado un cono para simular la corona que lleva dicho coche en la foto. Finalmente he simulado el nitroso con unas esferas que simulan las pompas que puedes escoger como nitroso en el videojuego.

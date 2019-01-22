@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="3.0">
+	<head/>
+	<Scene>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0 0.3 0"/>
+			</Appearance>
+			<Sphere radius="6.5"/>
+		</Shape>
+				<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 0"/>
+			</Appearance>
+			<Cone height="22" bottomRadius="5" bottom="FALSE"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1 0 1"/>
+			</Appearance>
+			<Box size="16 0.5 16"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0 0.8"/>
+			</Appearance>
+			<Box size="15.5 1 15.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0 0.4"/>
+			</Appearance>
+			<Box size="15 1.5 15"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.2 0.7"/>
+			</Appearance>
+			<Box size="14.5 2 14.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.5 0.5"/>
+			</Appearance>
+			<Box size="14 2.5 14"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.5 0.8"/>
+			</Appearance>
+			<Box size="13.5 3 13.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.3 0.8"/>
+			</Appearance>
+			<Box size="13 3.5 13"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0 0.3"/>
+			</Appearance>
+			<Box size="12.5 4 12.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0 0.1"/>
+			</Appearance>
+			<Box size="12 4.5 12"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0 0.8"/>
+			</Appearance>
+			<Box size="11.5 5 11.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.1 0.6"/>
+			</Appearance>
+			<Box size="11 5.5 11"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 1 0.1"/>
+			</Appearance>
+			<Box size="10.5 6 10.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 1 0.6"/>
+			</Appearance>
+			<Box size="10 6.5 10"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.3 0.6 0.9"/>
+			</Appearance>
+			<Box size="9.5 7 9.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0.1 0.1"/>
+			</Appearance>
+			<Box size="9 7.5 9"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0 0 1"/>
+			</Appearance>
+			<Cylinder height="20" radius="0.4"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 0.8 0.1"/>
+			</Appearance>
+			<Cylinder height="19.5" radius="0.6"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 0.8"/>
+			</Appearance>
+			<Cylinder height="19" radius="0.9"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.3"/>
+			</Appearance>
+			<Cylinder height="18.5" radius="1.2"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="18" radius="1.5"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.2"/>
+			</Appearance>
+			<Cylinder height="17.5" radius="1.8"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="17" radius="2.1"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.2"/>
+			</Appearance>
+			<Cylinder height="16.5" radius="2.4"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="16" radius="2.7"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.2"/>
+			</Appearance>
+			<Cylinder height="15.5" radius="3"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="15" radius="3.3"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.2"/>
+			</Appearance>
+			<Cylinder height="14.5" radius="3.6"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="14" radius="3.9"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.5 0.1 0.2"/>
+			</Appearance>
+			<Cylinder height="13.5" radius="4.2"/>
+		</Shape>
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.4 1 1"/>
+			</Appearance>
+			<Cylinder height="13" radius="4.5"/>
+		</Shape>
+	</Scene>
+</X3D>

@@ -1,0 +1,712 @@
+#VRML V2.0 utf8
+
+#Definimos el grupo coche
+DEF coche Group
+{
+	children
+	[
+		#CHASIS DELANTERO DEL COCHE
+		Shape
+		{
+			appearance Appearance
+			{
+				material Material
+				{
+					diffuseColor 0 0.6 0.6
+				}
+			}
+
+			geometry IndexedFaceSet
+			{
+				solid FALSE
+				coord Coordinate
+				{
+					point
+					[
+						0.4  -0.3  0.4,
+						0.4  -0.3 -0.4,
+						-1.1  0.4 -0.5,
+						-1.1  0.4  0.5,
+						0.4 -0.5  0.4,
+						0.4 -0.5 -0.4,
+						-1.1 -0.5 -0.5,
+						-1.1 -0.5  0.5
+					]
+				}
+				coordIndex
+				[
+					0, 1, 2, 3, -1,
+					0, 4, 5, 1, -1,
+					1, 5, 6, 2, -1,
+					2, 6, 7, 3, -1,
+					3, 7, 4, 0, -1,
+					4, 7, 6, 5, -1,
+				]
+			}
+		}
+
+		#CHASIS TRASERO DEL COCHE
+		Transform
+		{
+			translation -1.5 -0.05 0
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0 0.6 0.6
+					}
+				}
+
+				geometry Box
+				{
+					size 0.8 0.9 1
+				}
+			}
+		}
+
+		#RUEDA DELANTERA IZQ DEL COCHE
+		Transform
+		{
+			translation 0.2 -0.46 0.4
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0 0.1
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.15
+				}	
+			}
+		}
+
+		#RUEDA DELANTERA DER DEL COCHE
+		Transform
+		{
+			translation 0.2 -0.46 -0.4
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0 0.1
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.15
+				}	
+			}
+		}
+
+		#RUEDA TRASERA IZQ DEL COCHE
+		Transform
+		{
+			translation -1.5 -0.42 0.5
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0 0.1
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.2
+				}	
+			}
+		}
+
+		#RUEDA TRASERA DER DEL COCHE
+		Transform
+		{
+			translation -1.5 -0.42 -0.5
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0 0.1
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.2
+				}	
+			}
+		}
+
+		#PARTE IZQ DEL ALERON
+		Transform
+		{
+			translation -1.9 0.47 -0.45
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0.2 0.5 0.5
+		  			}	
+				}
+
+				geometry Box
+				{
+					size 0.001 0.2 0.05
+				}	
+			}
+		}
+
+		#PARTE DER DEL ALERON
+		Transform
+		{
+			translation -1.9 0.47 0.45
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0.2 0.5 0.5
+		  			}	
+				}
+
+				geometry Box
+				{
+					size 0.001 0.2 0.05
+				}	
+			}
+		}
+
+		#PARTE PRINCIPAL DEL ALERON
+		Transform
+		{
+			translation -1.9 0.57 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 1 1 0.2
+		  			}	
+				}
+
+				geometry Box
+				{
+					size 0.1 0.005 1.3
+				}	
+			}
+		}
+
+		#TUBO DE ESCAPE
+		Transform
+		{
+			translation -2.1 0 0
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 1 1 0.2
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate 
+					{
+						point 
+						[
+							0.2  0.2  0.2,
+							0.2  0.2 -0.2,
+							-0.1  0.1 -0.1,
+							-0.1  0.1  0.1,
+							0.2 -0.2  0.2,
+							0.2 -0.2 -0.2,
+							-0.1 -0.1 -0.1,
+							-0.1 -0.1  0.1
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1
+					]
+				}		
+			}
+		}
+
+		#VENTANA DELANTERA
+		Transform
+		{
+			translation 0.1 0 0
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0 0 0
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate
+					{
+						point
+						[
+							0.25  -0.3  0.4,
+							0.25 -0.3 -0.4,
+							-0.9  0.28 -0.4,
+							-0.9  0.28  0.4,
+							0.2 -0.4  0.4,
+							0.2 -0.4 -0.4,
+							-0.9 -0.4 -0.4,
+							-0.9 -0.4  0.4
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1,
+					]
+				}
+			}
+		}
+
+		#LUZ DELANTERA IZQ
+		Transform
+		{
+			scale 0.3 0.3 0.3
+			translation 0.4 -0.4 0.25
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.7 1 0
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate 
+					{
+						point 
+						[
+							0.1  0.1  0.1,
+							0.1  0.1 -0.1,
+							-0.2  0.2 -0.2,
+							-0.2  0.2  0.2,
+							0.1 -0.1  0.1,
+							0.1 -0.1 -0.1,
+							-0.2 -0.2 -0.2,
+							-0.2 -0.2  0.2
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1
+					]
+				}		
+			}
+		}
+		
+		#LUZ DELANTERA DER
+		Transform
+		{
+			scale 0.3 0.3 0.3
+			translation 0.4 -0.4 -0.25
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.7 1 0
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate 
+					{
+						point 
+						[
+							0.1  0.1  0.1,
+							0.1  0.1 -0.1,
+							-0.2  0.2 -0.2,
+							-0.2  0.2  0.2,
+							0.1 -0.1  0.1,
+							0.1 -0.1 -0.1,
+							-0.2 -0.2 -0.2,
+							-0.2 -0.2  0.2
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1
+					]
+				}		
+			}
+		}
+
+		#ALA IZQ
+		Transform
+		{
+			scale 0.6 0.6 0.6
+			translation -1.5 0.2 0.55
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 1 1 0.2
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate 
+					{
+						point 
+						[
+							-1  0  1,
+							0  0.2 -0.2,
+							-0.2  0.2 -0.2,
+							-1  0  1,
+							-1 -0  1,
+							0.2 -0.1 -0.2,
+							-0 -0.1 -0.2,
+							-1 -0  1
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1
+					]
+				}		
+			}
+		}
+
+		#ALA DER
+		Transform
+		{
+			scale 0.6 0.6 0.6
+			translation -1.5 0.2 -0.55
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 1 1 0.2
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate 
+					{
+						point 
+						[
+							0.1  0.2  0.2,
+							-1  0 -1,
+							-1  0 -1,
+							-0.1  0.2  0.2,
+							0.1 -0.1  0.2,
+							-1 -0 -1,
+							-1 -0 -1,
+							-0.1 -0.1  0.2
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1
+					]
+				}		
+			}
+		}
+
+		#GORRO
+		Transform
+		{
+			translation -1.5 0.6 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0.8 0 0
+		  			}	
+				}
+
+				geometry Cone
+				{
+					height 0.5
+					bottomRadius 0.3
+				}	
+			}
+		}
+
+		#BURBUJA 1
+		Transform
+		{
+			translation -2.3 0 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0.5 0.9
+		  				transparency 0.4
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.09
+				}	
+			}
+		}
+
+		#BURBUJA 2
+		Transform
+		{
+			translation -2.4 0.1 0.1
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0.5 0.9
+		  				transparency 0.4
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.09
+				}	
+			}
+		}
+
+		#BURBUJA 3
+		Transform
+		{
+			translation -2.5 0.15 -0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0.5 0.9
+		  				transparency 0.4
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.09
+				}	
+			}
+		}
+
+		#BURBUJA 4
+		Transform
+		{
+			translation -2.3 0.1 -0.1
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0 0.5 0.9
+		  				transparency 0.4
+		  			}	
+				}
+
+				geometry Sphere
+				{
+					radius 0.09
+				}	
+			}
+		}
+
+		#VENTANA LATERAL IZQ
+		Transform
+		{
+			scale 0.4 0.4 0.4
+			translation -0.45 0.1 0.35
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0 0 0
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate
+					{
+						point
+						[
+							0.1  -0.3  0.35,
+							0.1  -0.3 -0.4,
+							-0.9  0.28 -0.4,
+							-0.9  0.28  0.4,
+							0.1 -0.4  0.35,
+							0.1 -0.4 -0.4,
+							-0.9 -0.4 -0.4,
+							-0.9 -0.4  0.4
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1,
+					]
+				}
+			}
+		}
+
+		#VENTANA LATERAL DER
+		Transform
+		{
+			scale 0.4 0.4 0.4
+			translation -0.45 0.1 -0.35
+			children Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0 0 0
+					}
+				}
+
+				geometry IndexedFaceSet
+				{
+					solid FALSE
+					coord Coordinate
+					{
+						point
+						[
+							0.1  -0.3  0.35,
+							0.1  -0.3 -0.4,
+							-0.9  0.28 -0.4,
+							-0.9  0.28  0.4,
+							0.1 -0.4  0.35,
+							0.1 -0.4 -0.4,
+							-0.9 -0.4 -0.4,
+							-0.9 -0.4  0.4
+						]
+					}
+					coordIndex
+					[
+						0, 1, 2, 3, -1,
+						0, 4, 5, 1, -1,
+						1, 5, 6, 2, -1,
+						2, 6, 7, 3, -1,
+						3, 7, 4, 0, -1,
+						4, 7, 6, 5, -1,
+					]
+				}
+			}
+		}
+
+		#NOMBRE DE LA FIGURA
+		Transform
+		{
+			scale 10 10 10
+			translation -1.3 0 0.55
+			children Shape 
+			{
+				appearance Appearance 
+				{
+				    material Material {}
+				}
+				geometry Text 
+				{
+		            string 
+		            [
+		            	"Rocket League's Car",
+		            ]
+		            fontStyle FontStyle 
+		            {
+		            	family  "SANS"
+		                style  "BOLD"
+		                size    0.25
+		                justify "MIDDLE"
+		           	}
+	            }
+			}
+		}
+	]
+}

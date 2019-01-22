@@ -1,0 +1,9 @@
+Para crear la figura que incluye 15 cajas, 15 cilindros, una esfera y un cono, los he superpuesto de la siguiente manera:
+	
+	1.Primero he creado la esfera para poder así saber cuándo una caja o un cilindo lo superpone.
+	
+	2.Seguidamente, he creado las cajas haciendo que la anchura, altura y profundidad vayan disminuyéndose de 0.5 en 0.5.
+	
+	3.Para incluir los cilindros, he creado primero el cilindro más grande con lo que a altura se refiere. Seguidamente he ido incrementando el radio de 0.3 en 0.3 y la altura disminuyéndola de 0.5 en 0.5.
+
+	4.Finalmente, he creado el cono con el objetivo de que se vea tanto la base, como el pico. Además, he incluido la opción bottom con el valor FALSE, para podér así apreciar los cilindros desde la parte inferior.

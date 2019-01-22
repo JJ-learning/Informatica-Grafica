@@ -1,0 +1,7 @@
+CC = gcc
+LIBS = -lGL -lglut -lGLU
+NOMBRE= ejecutable
+MAIN= rectangulo.cc
+
+%: %.cc
+	$(CC) -o $(NOMBRE) $(MAIN) $(LIBS)

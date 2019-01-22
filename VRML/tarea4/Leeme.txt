@@ -1,0 +1,11 @@
+Para recrear la figura de Iron Man aterrizando, he utilizado un obj, que he convertido a wrl, con la máscara del personaje. Al principio, he creado un Box en el eje 0 0 0, para así, poder crear el resto de primitivas y poder rotarlas adecuadamente. 
+
+Para recrear el torso, he utilizado dos Box, uno, más grande, para recrear la parte superior, y un segundo para recrear la cadera. Para unirlos, he utilizado dos joints para poder así recrear dicha articulación.
+
+Para los brazos, he utilizado cinlindros de distintos tamaños para recrear los bones, y esferas, de distintos tamaños también, para recrear los joints.
+
+Para las piernas, he utilizado lo mismo que para los brazos pero con un mayor tamaño.
+
+Todas estas figuras han sido rotadas cada una de distinta manera, para que así, se adecúe más a la pose del personaje.
+
+Finalmente, he reducido la máscara de Iron Man a la mitad para que no pareciera muy "cabezón" el personaje.

@@ -1,0 +1,154 @@
+#VRML V2.0 utf8
+
+#definimos el grupo boligrafo
+DEF boligrafo Group
+{
+	children [
+		#CUERPO DEL BOLI
+			Shape
+			{
+				appearance Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.502714 0.295535 0.191551
+					}
+				}
+
+			geometry Cylinder
+			{
+				height 3
+				radius 0.2
+			}
+		}
+
+		#PUNTA DEL BOLI
+		Transform
+		{	
+			translation 0 2 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+		  				diffuseColor 0.277500 0.277500 0.277500
+		  			}	
+				}
+
+				geometry Cone
+				{
+					height 1
+					bottomRadius 0.2
+				}
+			}	
+		}
+
+		#TINTA DEL BOLI
+		Transform
+		{
+			translation 0 2.5 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+						diffuseColor 0.000000 0.000000 0.000000
+					}	
+				}
+
+				geometry Cone
+				{
+					height 0.1
+					bottomRadius 0.01
+				}
+			}
+		}
+
+		#IMPERDIBLE DEL BOLI PARTE1
+		Transform
+		{
+			translation -0.3 -0.9 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+						diffuseColor 0.000000 0.000000 0.000000
+
+					}
+				}
+
+				geometry Box
+				{
+					size 0.1 1 0.1
+				}
+			}
+		}
+
+		#IMPERDIBLE DEL BOLI PARTE2
+		Transform
+		{
+			translation -0.2 -1.4 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+						diffuseColor 0.000000 0.000000 0.000000
+
+					}
+				}
+
+				geometry Box
+				{
+					size 0.1 0.1 0.1
+				}
+			}
+		}
+
+		#ADORNO DEL BOLI
+		Transform
+		{
+			translation 0 -1.5 0
+			children Shape
+			{
+				appearance Appearance
+				{	
+					material Material
+					{
+						diffuseColor 0.000000 0.000000 0.000000
+
+					}
+				}
+
+				geometry Sphere
+				{
+					radius 0.2
+				}
+			}
+		}
+	]
+}	
+
+
+#DUPLICADOS
+
+#DEFORMACION
+Transform
+{
+	translation 4 0 0
+	scale 0.5 2 3.5
+	children USE boligrafo
+}
+
+#ESCALADO
+Transform
+{
+	translation -4 0 0
+	scale 2 2 2
+	children USE boligrafo
+}

@@ -1,0 +1,1099 @@
+#VRML V2.0 utf8
+
+#Definimos el grupo coche
+DEF Coche Group
+{
+	children
+	[
+		DEF Touch1 TouchSensor{},
+		DEF coche Transform
+		{
+			translation 0 0.7 0
+			children
+			[
+				#CHASIS DELANTERO DEL COCHE
+				Shape
+				{
+					appearance Appearance
+					{
+						material Material
+						{
+							diffuseColor 0.400000 0.400000 0.400000
+			               ambientIntensity 0.625000
+			               specularColor 0.774597 0.774597 0.774597
+			               emissiveColor 0.000000 0.000000 0.000000
+			               shininess 0.600000
+			               transparency 0.000000
+						}
+					}
+
+					geometry IndexedFaceSet
+					{
+						solid FALSE
+						coord Coordinate
+						{
+							point
+							[
+								0.4  -0.3  0.4,
+								0.4  -0.3 -0.4,
+								-1.1  0.4 -0.5,
+								-1.1  0.4  0.5,
+								0.4 -0.5  0.4,
+								0.4 -0.5 -0.4,
+								-1.1 -0.5 -0.5,
+								-1.1 -0.5  0.5
+							]
+						}
+						coordIndex
+						[
+							0, 1, 2, 3, -1,
+							0, 4, 5, 1, -1,
+							1, 5, 6, 2, -1,
+							2, 6, 7, 3, -1,
+							3, 7, 4, 0, -1,
+							4, 7, 6, 5, -1,
+						]
+					}
+				}
+
+				#CHASIS TRASERO DEL COCHE
+				Transform
+				{
+					translation -1.5 -0.05 0
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0.400000 0.400000 0.400000
+				               ambientIntensity 0.625000
+				               specularColor 0.774597 0.774597 0.774597
+				               emissiveColor 0.000000 0.000000 0.000000
+				               shininess 0.600000
+				               transparency 0.000000
+							}
+						}
+
+						geometry Box
+						{
+							size 0.8 0.9 1
+						}
+					}
+				}
+
+				#RUEDA DELANTERA IZQ DEL COCHE
+				Transform
+				{
+					translation 0.2 -0.46 0.4
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0 0.1
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.15
+						}	
+					}
+				}
+
+				#RUEDA DELANTERA DER DEL COCHE
+				Transform
+				{
+					translation 0.2 -0.46 -0.4
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0 0.1
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.15
+						}	
+					}
+				}
+
+				#RUEDA TRASERA IZQ DEL COCHE
+				Transform
+				{
+					translation -1.5 -0.42 0.5
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0 0.1
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.2
+						}	
+					}
+				}
+
+				#RUEDA TRASERA DER DEL COCHE
+				Transform
+				{
+					translation -1.5 -0.42 -0.5
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0 0.1
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.2
+						}	
+					}
+				}
+
+				#PARTE IZQ DEL ALERON
+				Transform
+				{
+					translation -1.9 0.47 -0.45
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0.2 0.5 0.5
+				  			}	
+						}
+
+						geometry Box
+						{
+							size 0.001 0.2 0.05
+						}	
+					}
+				}
+
+				#PARTE DER DEL ALERON
+				Transform
+				{
+					translation -1.9 0.47 0.45
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0.2 0.5 0.5
+				  			}	
+						}
+
+						geometry Box
+						{
+							size 0.001 0.2 0.05
+						}	
+					}
+				}
+
+				#PARTE PRINCIPAL DEL ALERON
+				Transform
+				{
+					translation -1.9 0.57 0
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 1 1 0.2
+				  			}	
+						}
+
+						geometry Box
+						{
+							size 0.1 0.005 1.3
+						}	
+					}
+				}
+
+				#TUBO DE ESCAPE
+				Transform
+				{
+					translation -2.1 0 0
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 1 1 0.2
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate 
+							{
+								point 
+								[
+									0.2  0.2  0.2,
+									0.2  0.2 -0.2,
+									-0.1  0.1 -0.1,
+									-0.1  0.1  0.1,
+									0.2 -0.2  0.2,
+									0.2 -0.2 -0.2,
+									-0.1 -0.1 -0.1,
+									-0.1 -0.1  0.1
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1
+							]
+						}		
+					}
+				}
+
+				#VENTANA DELANTERA
+				Transform
+				{
+					translation 0.1 0 0
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0 0 0
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate
+							{
+								point
+								[
+									0.25  -0.3  0.4,
+									0.25 -0.3 -0.4,
+									-0.9  0.28 -0.4,
+									-0.9  0.28  0.4,
+									0.2 -0.4  0.4,
+									0.2 -0.4 -0.4,
+									-0.9 -0.4 -0.4,
+									-0.9 -0.4  0.4
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1,
+							]
+						}
+					}
+				}
+
+				#LUZ DELANTERA IZQ
+				Transform
+				{
+					scale 0.3 0.3 0.3
+					translation 0.4 -0.4 0.25
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0.7 1 0
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate 
+							{
+								point 
+								[
+									0.1  0.1  0.1,
+									0.1  0.1 -0.1,
+									-0.2  0.2 -0.2,
+									-0.2  0.2  0.2,
+									0.1 -0.1  0.1,
+									0.1 -0.1 -0.1,
+									-0.2 -0.2 -0.2,
+									-0.2 -0.2  0.2
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1
+							]
+						}		
+					}
+				}
+				
+				#LUZ DELANTERA DER
+				Transform
+				{
+					scale 0.3 0.3 0.3
+					translation 0.4 -0.4 -0.25
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0.7 1 0
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate 
+							{
+								point 
+								[
+									0.1  0.1  0.1,
+									0.1  0.1 -0.1,
+									-0.2  0.2 -0.2,
+									-0.2  0.2  0.2,
+									0.1 -0.1  0.1,
+									0.1 -0.1 -0.1,
+									-0.2 -0.2 -0.2,
+									-0.2 -0.2  0.2
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1
+							]
+						}		
+					}
+				}
+
+				#ALA IZQ
+				Transform
+				{
+					scale 0.6 0.6 0.6
+					translation -1.5 0.2 0.55
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 1 1 0.2
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate 
+							{
+								point 
+								[
+									-1  0  1,
+									0  0.2 -0.2,
+									-0.2  0.2 -0.2,
+									-1  0  1,
+									-1 -0  1,
+									0.2 -0.1 -0.2,
+									-0 -0.1 -0.2,
+									-1 -0  1
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1
+							]
+						}		
+					}
+				}
+
+				#ALA DER
+				Transform
+				{
+					scale 0.6 0.6 0.6
+					translation -1.5 0.2 -0.55
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 1 1 0.2
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate 
+							{
+								point 
+								[
+									0.1  0.2  0.2,
+									-1  0 -1,
+									-1  0 -1,
+									-0.1  0.2  0.2,
+									0.1 -0.1  0.2,
+									-1 -0 -1,
+									-1 -0 -1,
+									-0.1 -0.1  0.2
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1
+							]
+						}		
+					}
+				}
+
+				#GORRO
+				Transform
+				{
+					translation -1.5 0.6 0
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0.8 0 0
+				  			}	
+						}
+
+						geometry Cone
+						{
+							height 0.5
+							bottomRadius 0.3
+						}	
+					}
+				}
+
+				#BURBUJA 1
+				Transform
+				{
+					translation -2.3 0 0
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0.5 0.9
+				  				transparency 0.4
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.09
+						}	
+					}
+				}
+
+				#BURBUJA 2
+				Transform
+				{
+					translation -2.4 0.1 0.1
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0.5 0.9
+				  				transparency 0.4
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.09
+						}	
+					}
+				}
+
+				#BURBUJA 3
+				Transform
+				{
+					translation -2.5 0.15 -0
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0.5 0.9
+				  				transparency 0.4
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.09
+						}	
+					}
+				}
+
+				#BURBUJA 4
+				Transform
+				{
+					translation -2.3 0.1 -0.1
+					children Shape
+					{
+						appearance Appearance
+						{	
+							material Material
+							{
+				  				diffuseColor 0 0.5 0.9
+				  				transparency 0.4
+				  			}	
+						}
+
+						geometry Sphere
+						{
+							radius 0.09
+						}	
+					}
+				}
+
+				#VENTANA LATERAL IZQ
+				Transform
+				{
+					scale 0.4 0.4 0.4
+					translation -0.45 0.1 0.35
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0 0 0
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate
+							{
+								point
+								[
+									0.1  -0.3  0.35,
+									0.1  -0.3 -0.4,
+									-0.9  0.28 -0.4,
+									-0.9  0.28  0.4,
+									0.1 -0.4  0.35,
+									0.1 -0.4 -0.4,
+									-0.9 -0.4 -0.4,
+									-0.9 -0.4  0.4
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1,
+							]
+						}
+					}
+				}
+
+				#VENTANA LATERAL DER
+				Transform
+				{
+					scale 0.4 0.4 0.4
+					translation -0.45 0.1 -0.35
+					children Shape
+					{
+						appearance Appearance
+						{
+							material Material
+							{
+								diffuseColor 0 0 0
+							}
+						}
+
+						geometry IndexedFaceSet
+						{
+							solid FALSE
+							coord Coordinate
+							{
+								point
+								[
+									0.1  -0.3  0.35,
+									0.1  -0.3 -0.4,
+									-0.9  0.28 -0.4,
+									-0.9  0.28  0.4,
+									0.1 -0.4  0.35,
+									0.1 -0.4 -0.4,
+									-0.9 -0.4 -0.4,
+									-0.9 -0.4  0.4
+								]
+							}
+							coordIndex
+							[
+								0, 1, 2, 3, -1,
+								0, 4, 5, 1, -1,
+								1, 5, 6, 2, -1,
+								2, 6, 7, 3, -1,
+								3, 7, 4, 0, -1,
+								4, 7, 6, 5, -1,
+							]
+						}
+					}
+				}
+			]
+		}
+
+	]
+}
+
+
+DEF circuito Group
+{
+	children
+	[
+		#RECTA 1
+		Transform
+		{
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 12 0.2 4
+				}
+			}
+		}
+
+		#RECTA 2
+		Transform
+		{
+			translation 8 0.4 0
+			rotation 0 0 1 0.2
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 4 0.2 4
+				}
+			}
+		}
+
+		#RECTA 3
+		Transform
+		{
+			translation 14 0.8 0
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 8 0.2 4
+				}
+			}
+		}
+
+		#RECTA 4
+		Transform
+		{
+			translation 20 0.8 -5.5
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 4 0.2 15
+				}
+			}
+		}
+
+		#RECTA 5
+		Transform
+		{
+			translation 14 0.8 -11
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 8 0.2 4
+				}
+			}
+		}
+
+		#RECTA 6
+		Transform
+		{
+			translation 8 0.4 -11
+			rotation 0 0 1 0.2
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 4 0.2 4
+				}
+			}
+		}
+
+		#RECTA 7
+		Transform
+		{
+			translation 0 0 -11
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 12 0.2 4
+				}
+			}
+		}
+
+		#RECTA 8
+		Transform
+		{
+			translation -5 0 -5.5
+			children Shape
+			{
+				appearance DEF RojoMetalico Appearance
+				{
+					material Material
+					{
+						diffuseColor 0.248705 0.248705 0.248705
+		               ambientIntensity 0.208333
+		               specularColor 0.053032 0.045607 0.134715
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.098446
+		               transparency 0.000000
+					}
+				}
+				geometry Box
+				{
+					size 4 0.2 15
+				}
+			}
+		}
+	]
+}
+
+DEF salida Group
+{
+	children
+	[
+		#PALO1
+		Transform
+		{
+			translation 0 1.5 1.8
+			children Shape
+			{
+				appearance Appearance 
+				{
+				    material Material
+				    {
+				    	diffuseColor 0.748016 0.139569 0.000000
+		               ambientIntensity 0.250000
+		               specularColor 0.709091 0.709091 0.709091
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.478788
+		               transparency 0.000000
+				    }
+				}
+				geometry Cylinder
+				{
+					height 3
+					radius 0.2
+				}
+			}
+		}
+
+		#PALO2
+		Transform
+		{
+			translation 0 1.5 -1.8
+			children Shape
+			{
+				appearance Appearance 
+				{
+				    material Material
+				    {
+				    	diffuseColor 0.748016 0.139569 0.000000
+		               ambientIntensity 0.250000
+		               specularColor 0.709091 0.709091 0.709091
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.478788
+		               transparency 0.000000
+				    }
+				}
+				geometry Cylinder
+				{
+					height 3
+					radius 0.2
+				}
+			}
+		}
+
+		#PANCARTA
+		Transform
+		{
+			translation 0 3 0
+			children Shape
+			{
+				appearance Appearance 
+				{
+				    material Material
+				    {
+				    	diffuseColor 0.748016 0.139569 0.000000
+		               ambientIntensity 0.250000
+		               specularColor 0.709091 0.709091 0.709091
+		               emissiveColor 0.000000 0.000000 0.000000
+		               shininess 0.478788
+		               transparency 0.000000
+				    }
+				}
+				geometry Box
+				{
+					size 0.2 2 4					
+				}
+			}
+		}
+
+		#START
+		Transform
+		{
+			translation 0.15 3 0
+			rotation 0 1 0 1.5708
+			children Shape 
+			{
+				appearance Appearance 
+				{
+				    material Material
+				    {
+				    	diffuseColor 0.000000 0.000000 0.000000
+		               ambientIntensity 0.000000
+		               specularColor 0.622449 0.622449 0.622449
+		               emissiveColor 0.023906 1.000000 0.002390
+		               shininess 0.051020
+		               transparency 0.000000
+				    }
+				}
+				geometry Text 
+				{
+		            string 
+		            [
+		            	"START",
+		            ]
+		            fontStyle FontStyle 
+		            {
+		            	family  "SANS"
+		                style  "BOLD"
+		                size    1.5
+		                justify "MIDDLE"
+		           	}
+	            }
+			}
+		}
+
+		#FINISH
+		Transform
+		{
+			translation -0.15 3 0
+			rotation 0 1 0 -1.5708
+			children Shape 
+			{
+				appearance Appearance 
+				{
+				    material Material
+				    {
+				    	diffuseColor 0.000000 0.000000 0.000000
+		               ambientIntensity 0.000000
+		               specularColor 0.622449 0.622449 0.622449
+		               emissiveColor 0.023906 1.000000 0.002390
+		               shininess 0.051020
+		               transparency 0.000000
+				    }
+				}
+				geometry Text 
+				{
+		            string 
+		            [
+		            	"FINISH",
+		            ]
+		            fontStyle FontStyle 
+		            {
+		            	family  "SANS"
+		                style  "BOLD"
+		                size    1.5
+		                justify "MIDDLE"
+		           	}
+	            }
+			}
+		}
+	]
+}
+
+DEF TimeCoche TimeSensor
+{
+	cycleInterval 20.5
+	loop FALSE
+	startTime 0.0
+	stopTime 1.0
+}
+
+DEF Recta PositionInterpolator{
+	key[0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.2, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3, 0.31, 0.32]
+	keyValue[0 0.7 0, 2 0.7 0, 5 0.7 0, 5.5 0.7 0, 6.5 0.9 0, 8 1.1 0, 9 1.3 0, 10 1.5 0, 12 1.5 0, 14 1.5 0, 16 1.5 0, 18 1.5 0, 20 1.5 -0.5, 20 1.5 -3, 20 1.5 -6, 20 1.5 -7, 19 1.5 -8.5, 17 1.5 -11, 14 1.5 -11, 10 1.5 -11, 9 1.3 -11, 8 1.1 -11, 6.5 0.9 -11, 5.5 0.8 -11, 5 0.7 -11, -1 0.7 -11, -3 0.7 -10, -4 0.7 -8, -5 0.7 -7, -5 0.7 -3, -4 0.7 -1, -2 0.7 0, 0 0.7 0]
+}
+
+DEF TimerSubida1 TimeSensor{
+	cycleInterval 14.6
+	loop FALSE
+	startTime 0
+	stopTime 1
+}
+
+DEF GiroCoche1 OrientationInterpolator{
+	key[0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.2, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.4]
+	keyValue[0 0 1.0 0, 0 0 1.0 0, 0 0 1.0 0, 0 0 1.0 0, 0 0 1.0 0, 0 0 1.0 0.1, 0 0 1.0 0.15, 0 0 1.0 0.2, 0 0 1 0.2, 0 0 1 0.1, 0 0 1 0, 0 1 0 0, 0 1 0 0.2708, 0 1 0 0.3708, 0 1 0 0.9708, 0 1 0 1.1708, 0 1 0 1.5708, 0 1 0 1.5708, 0 1 0 2.1, 0 1 0 2.5, 0 1 0 2.8, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.14, 0 1 0 3.6, 0 1 0 4.72, 0 1 0 4.72, 0 1 0 4.72, 0 1 0 5.2, 0 1 0 6.2434]
+}
+
+
+ROUTE Touch1.touchTime TO TimeCoche.set_startTime
+ROUTE Touch1.touchTime TO TimerSubida1.set_startTime
+ROUTE TimeCoche.fraction_changed TO Recta.set_fraction
+ROUTE TimerSubida1.fraction_changed TO GiroCoche1.set_fraction
+ROUTE Recta.value_changed TO coche.set_translation
+ROUTE GiroCoche1.value_changed TO coche.set_rotation

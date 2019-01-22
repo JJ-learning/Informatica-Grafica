@@ -1,0 +1,120 @@
+Primera Practica:
+	Modelos 3D:
+	Listas de vértices y aristas.
+	(v)Vertices: v1,v2,v2...
+	(f)Caras: T->Triangulos(Cada uno se relaciona con un vértice)
+			Q->Quad
+	Formato OBJ
+
+Segunda Practica:
+	Dentro de los obj, los que nos interesa es el primer número, que son los indices.
+	BoundingBox.(Minima caja donde cabe el modelo obj)
+	Necesitamos: 1- Calculo del box (Para ver el modelo, tenemos que utilizar la característica de TRANSPARENCY: Es un valor float [0,1])
+				 2- Traducir el modelo (obj a vrlm) 
+
+Videojuegos: Video 1
+	+Introducción:(No hay que poner todos)
+		-Hablar de la plataforma en la que se juega.(Orientado a los videojuegos)
+		-Equipo de desarrollo.(Mirar el árbol de las transparencia y ver dónde están los informáticos)
+		-Género del mundo de los videojuegos.
+		-De dónde surge el videojuego.
+		-Contexto de aparición.(En qué situación ha aparecido el juego)(Cuándo, cómo y por qué)
+		-Apariciones en eventos de videojuegos.
+		-Trailers del videojuego.(Comentarlos)
+		Duración media de 10 a 20 minutos.
+		Video: 
+			-Que vaya dirigido a la peña.
+			-Propio.
+			-Que siga las reglas de Youtube.
+			-No es necesario la edición, si quieres editarlo, hazlo.
+			-URL privada/protegida.
+			-Hacer un índice de contenidos.(Puedes hacerlo durante el video y obligatorio en la descripción)
+			-Indicar si hacemos refereancia a otro vídeo, página, etc. (Lo que no es nuestro)
+			-Audio, música, etc.
+		Nota: Para hacer el video con el SimplescreenRecoder, hay que poner el comtenedor en Matroska, y el códec en MP3, así funciona el audio y el video.
+		Nota2: Para editar el video utilizar openShot Video y después exportar el Filtr-HD.
+
+Tercera Practica:
+	Si un escalado es negativo, existe un efecto secundario que sería la reflexión del objeto.
+	Ejercicio: Elegir un objeto de tu videojuego y modelarlo con al menos 20 primitivas distintas, ya sean cajas, esferas, conos... e incluso con indexedFace
+
+Cuarta Practica:
+	Hacer lo mismo que la anterior pero utilizar el rotation x y z grados. Hay que centralizar un objeto para poder girarlo bien.
+
+Quinta Practica:
+	Hacer un podium y que le personaje se mueva de izq a der y de der a izq
+
+Sexta Practica:
+	Circuito rectangular, con un vehículo que sale desde la salida, y termina el circutito. No hacer rectas rectas, tiene que hacer un cambio de dirección, no de sentido.
+
+Video 2: Antecedentes
+	-Antecedentes de la Prehistoria.(Hasta 1990)
+		-Diferenciar entre arcade y consolas
+	-Década de los 90. Lo mismo que antes pero también podemos meter ya el pc
+	-2000 - 2010
+		-Consolas de nueva generación
+		-PC de altas capacidades
+	-2010 en adelante.
+	Todo esto con respecto a tu videojuego.
+	-Hablar del nicho del mercado.
+	-Diferencias con y entre sus antecesores.
+	-Tipo y perfil de usuarios a los que van dirigidos este videojuego.
+	-Sucesores, si se prevee de sacar una continuación del juego. Futuros desarrollos.
+	Duración de 10 a 20 minutos.
+
+Video 3: Análisis social
+	-Hype (Expectativas que se crean).
+	-Ventas.
+	-Reacción a evolución de contenidos.
+	-Evolución de la comunidad.
+	-Tipos de jugadores. (Hablar de los modos de juego también, y perfiles)
+	-Streaming. (Hablar de Youtube y Twitch)
+	-Evolución de la presencia en redes sociales.
+	Duración de 10 a 20 minutos.
+	 
+
+Video 4: Interfaz
+	-Menús.
+	-Variables de estado o propiedades(Personaje, población, propiedades del personaje, etc.).
+	-Mochila.
+	-Progreso o evolución.
+	-Mapeado(Escenario y forma).
+	-Enciclopedia o historia contextual del videojuego.
+	-HUD(Información en pantalla) 
+	-Formas de interacción(Cómo se puede jugar, admite realidad virtual, etc).
+	Duración: 10 a 20 minutos.
+
+
+Video 5: Modos de juego
+	-Configuración inicial. O ajustes necesarios.
+	-Tutorial¿Existe, se presenta in game?
+	-Niveles de dificultad y requerimientos a nivel de jugador. Podemos compararlos con otros juegos o situaciones conocidas
+	-Modos independientes de juego.
+	-Submodos de juego.
+	-Comunidades para modos de juego.
+	-Competiciones existentes por modos de juego.
+	-Diferencias entre offline y online.
+	Duración: 10-30 minutos.
+
+
+OPenGL:
+
+Tarea 2:
+	Modo línea -> fondo azul
+	Modo Triangulo -> fondo verde
+	Cambiamos de modo pulsando el boton derecho del raton
+
+	Modo línea:
+		-Cada dos pulsaciones de raton se hace una línea.
+	Modo Triangulo:
+		-Cada tres pulsaciones de raton se hace un triangulo.
+	Se dibuja con el botón izquierdo de ratón.
+
+Tarea 3:
+	GlutMotionFunc(mov);
+
+	void mov(int x, int y){}
+	Mover un punto de la pantalla cuando hayamos hecho una línea y poder agrandarla o moverla cuanto queramos.
+
+Tarea 4:
+https://www.youtube.com/watch?v=C2eLr4GxouE -> Para dibujar quads

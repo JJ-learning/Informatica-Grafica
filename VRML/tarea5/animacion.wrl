@@ -1,0 +1,73 @@
+#VRML V2.0 utf8  
+
+Group{
+
+	children[
+         DEF Subida Transform{
+			translation 0.0 0.0 0.0
+			children[ 
+		          DEF Touch1 TouchSensor{},
+                          Shape{  
+               			appearance Appearance{  
+                  		material Material {}  
+               			}  
+               			geometry Cylinder{  
+		                  height 8.0  
+                		  radius 1.5  
+               			}  
+            		 }
+        		]
+        }
+	]
+} 
+
+Group{
+children[
+         Transform{
+		translation 0.0 -3.0 0.0
+	children[
+			DEF Touch2 TouchSensor{},
+            Shape{  
+               appearance Appearance{  
+                  material Material {}  
+               }  
+               geometry Box{    
+                  size 5.0 3.0 5.0  
+               }  
+            }
+]
+} 
+]
+}
+
+DEF Timer1 TimeSensor{
+	cycleInterval 1.0
+	loop FALSE
+	startTime 0.0
+	stopTime 1.0
+}
+
+DEF PosicionSubida PositionInterpolator{
+	key[0.0, 1.0]
+	keyValue[0.0 0.0 0.0, 0.0 12.0 0.0]
+}
+
+DEF Timer2 TimeSensor{
+	cycleInterval 1.0
+	loop FALSE
+	startTime 0.0
+	stopTime 1.0
+}
+
+DEF PosicionBajada PositionInterpolator{
+	key[0.0, 1.0]
+	keyValue[0.0 12.0 0.0, 0.0 0.0 0.0]
+}
+
+ROUTE Touch1.touchTime TO Timer1.set_startTime
+ROUTE Timer1.fraction_changed TO PosicionSubida.set_fraction
+ROUTE PosicionSubida.value_changed TO Subida.set_translation
+
+ROUTE Touch2.touchTime TO Timer2.set_startTime
+ROUTE Timer2.fraction_changed TO PosicionBajada.set_fraction
+ROUTE PosicionBajada.value_changed TO Subida.set_translation

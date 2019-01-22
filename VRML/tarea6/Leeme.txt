@@ -1,0 +1,2 @@
+Para la realización de esta tarea he mejorado el coche que hice para la tarea 3 y además le he añadido un circuito en el que aparecen una subida y una bajada de nivel. Además le he añadido una meta para señalar el comienzo y el final del recorrido.
+Con respecto a la animación, he codigo un intervalo de 60 y lo he dividido en 12 partes para poder así ver más claro los movimientos del coche.
